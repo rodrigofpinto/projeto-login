@@ -27,14 +27,14 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden /*Tudo que tiver fora da borda fica escondido*/;
     background-color: white;
     width: 270px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
-
+    
+    transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
 }
@@ -81,11 +81,12 @@ div.campo input {
     background-color: #6adcd9;
     font-size: 1em;
     width: calc(100% - 44px);
-    transform: translateY(-10.5px);
     height: 100%;
     border: none;
     border-radius: 10px;
     padding: 4px;
+    
+    transform: translateY(-10.5px);
     
 }
 div.campo > input:focus-within{
