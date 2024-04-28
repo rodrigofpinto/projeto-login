@@ -8,10 +8,11 @@
 
 ## 💻 Projeto
 
-Este projeto é o site de Login do **Asseto Corsa** em  _HTML_ e _CSS_.
+Este projeto é o site de Login do **Asseto Corsa** em  _HTML_ , _CSS_ e  _JavaScript_.
 
 ## 🚀 Tecnologias
 
 - HTML
 - CSS
+- JavaCript
 
