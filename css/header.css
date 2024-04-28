@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 15vh;
+}
+header img {
+    width: auto;
+    height: 15vh;
+    
+    object-fit: cover;
+}

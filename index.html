@@ -3,38 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/global.css">
+    <title>Asseto Corsa</title>
 </head>
 <body>
+    <div class="background">
+        <img src="assets/fundo.jpg" alt="">
+    </div>
+    <header>
+        <img src="assets/logo.png" alt="">
+    </header>
     <main>
-        <section id="login">
-            <div id="imagem">
-
-            </div>
-            <div id="formulario">
+        <div class="formulario" required>
+            <div class="text">
                 <h1>Login</h1>
-                <p>Seja bem vindo novamente, faça login para acessar a sua conta e puder fazer as configurações do seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail">
-                        <label for="ilogin">Login</label>
-                    </div>
-                    <div class="campo">
-                        <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
-                        <label for="isenha">Senha</label>
-                    </div>
-                    <input type="submit" value="Entrar">
-                    <a class="botao" href="esqueci.html">
-                        Esqueci minha senha <span class="material-symbols-outlined">mail</span>
-                    </a>
-                </form>
+                <p>Faça login para ter tudo de melhor!</p>
+                <hr>
             </div>
-        </section>
+            <form action="" method="get">
+                <div class="area-input">
+                    <label for="i-email">Email:</label>
+                    <input type="email" name="email" id="i-email" required>
+                </div>
+                <div class="area-input">
+                    <label for="i-senha">Senha:</label>
+                    <input type="password" name="senha" id="i-senha" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Entrar">
+                    <p>Ainda não tem conta?</p>
+                    <input onclick="registar()" type="button" value="Registar">
+                </div>
+            </form>
+        </div>
+        <div class="formulario-registrar">
+            <div class="text">
+                <h1>Registar</h1>
+                <p>Faça login para ter tudo de melhor!</p>
+                <hr>
+            </div>
+            <form action="" method="get">
+                <div class="area-input">
+                    <label for="i-email">Email:</label>
+                    <input type="email" name="email" id="i-email" required>
+                </div>
+                <div class="area-input">
+                    <label for="i-senha">Senha:</label>
+                    <input type="password" name="senha" id="i-senha" required>
+                </div>
+                <div class="area-input">
+                    <label for="i-senha">Confirmar senha:</label>
+                    <input type="password" name="senha" id="i-senha" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Registar"
+                    onclick="registar()">
+                    <p>Já tem conta?</p>
+                    <input onclick ="registar()" type ="button" value="Entrar"> 
+                </div>
+            </form>
+        </div>
     </main>
+    <footer>
+        <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" target="_blank">Asseto Corsa on Steam</a>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
